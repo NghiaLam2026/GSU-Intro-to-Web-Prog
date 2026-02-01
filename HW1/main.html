@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to Web Programming HW1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-section-div">
+        <p>NghiaCustomPC</p>
+
+        <nav class="navbar-div" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#features">Parts Selection</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#newsletter">Newsletter</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="main-section-div" aria-label="Hero">
+        <div class="sub-main-section-div1">
+          <div>
+            <h1>Build your perfect PC — choose your own parts</h1>
+          </div>
+
+          <div>
+            <h3>
+              Hand-pick the latest top-reviewed components for a custom build
+              that's optimized, upgradable, and ready to assemble.
+            </h3>
+          </div>
+
+          <div>
+            <button type="button">Start Your Build</button>
+          </div>
+        </div>
+
+        <div class="sub-main-section-div2">
+          <img
+            src="public/main-background4.png"
+            alt="A collection of PC components representing a custom build"
+          />
+        </div>
+      </section>
+
+      <section id="features" class="grid-section" aria-label="Features">
+        <h2>Hand-pick every component, your way.</h2>
+
+        <div class="main-section-div2">
+          <div class="grid-card">
+            <div class="grid-card-image">
+              <img src="public/cpu.png" alt="CPU icon" />
+            </div>
+            <div class="grid-card-content">
+              <h3 class="grid-card-title">Latest CPUs</h3>
+              <p class="grid-card-desc">Explore new Ryzen and Intel processors.</p>
+              <a href="" class="grid-card-link">Browse CPUs &gt;</a>
+            </div>
+          </div>
+
+          <div class="grid-card">
+            <div class="grid-card-image">
+              <img src="public/gpu.png" alt="GPU icon" />
+            </div>
+            <div class="grid-card-content">
+              <h3 class="grid-card-title">Newest Graphics Cards</h3>
+              <p class="grid-card-desc">High FPS and ray tracing ready.</p>
+              <a href="" class="grid-card-link">Browse GPUs &gt;</a>
+            </div>
+          </div>
+
+          <div class="grid-card">
+            <div class="grid-card-image">
+              <img src="public/mobo.png" alt="Motherboard icon" />
+            </div>
+            <div class="grid-card-content">
+              <h3 class="grid-card-title">All Types of Mobos</h3>
+              <p class="grid-card-desc">
+                From popular brands like ASUS, MSI, Gigabyte.
+              </p>
+              <a href="" class="grid-card-link">Browse Motherboards &gt;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter" class="main-section-div3" aria-label="Newsletter">
+        <h2>Get build drops and tuning guides</h2>
+        <h3>Join the newsletter for restock alerts and pro build tips</h3>
+
+        <form>
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="main-footer-1">
+      <h3>© 2026 NghiaCustomPC. All rights reserved.</h3>
+    </footer>
+  </body>
+</html>
