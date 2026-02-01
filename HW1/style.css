@@ -12,11 +12,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-    margin: 0;
 }
 
+/* CSS for header section*/
 .header-section-div{
     display: flex;
     align-items: center;
@@ -43,7 +41,9 @@ body{
     text-decoration-color: #3b82f6;
     text-underline-offset: 0.25rem;
 }
+/* CSS for header section */
 
+/* CSS for main section div 1*/
 .main-section-div{
     display: flex;
     align-items: center;
@@ -88,7 +88,9 @@ body{
     max-height: 56rem;
     padding-right: 6.5rem;
 }
+/* CSS for main section div 1*/
 
+/* CSS for grid section */
 .grid-section{
     padding: 3rem;
     margin-top: 3rem;
@@ -106,7 +108,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin: 0 auto;
     justify-content: center;
 }
 
@@ -127,7 +128,6 @@ body{
     height: 5rem;
     background-color: #333;
     border-radius: 0.25rem;
-    overflow: hidden;
 }
 
 .grid-card-image img{
@@ -165,7 +165,10 @@ body{
 .grid-card-link:hover{
     text-decoration: underline;
 }
+/* CSS for grid section */
 
+
+/* CSS for main section div 3 */
 .main-section-div3{
     margin-top: 3rem;
     color: white;
@@ -197,12 +200,16 @@ body{
 .main-section-div3 input[type="submit"]:hover{
     background-color: #2563eb;
 }
+/* CSS for main section div 3 */
 
+/* CSS for footer */
 .main-footer-1{
     color: white;
     text-align: center;
     padding: 1.5rem 1rem;
 }
+/* CSS for footer */
+
 
 @media (max-width: 768px){
     .header-section-div{
