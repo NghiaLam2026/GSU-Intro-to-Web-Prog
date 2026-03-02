@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <!-- NOTE: Cleaned up LMS-injected scripts and added stylesheet link. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Score Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Student Score Tracker</h1>
+      <p class="subtitle">JavaScript DOM + Arrays + Events</p>
+
+      <section class="card">
+        <h2>Add Student</h2>
+
+        <div class="form-row">
+          <label for="nameInput">Student Name</label>
+          <input id="nameInput" type="text" placeholder="Enter student name" />
+        </div>
+
+        <div class="form-row">
+          <label for="scoreInput">Score (0-100)</label>
+          <input
+            id="scoreInput"
+            type="number"
+            min="0"
+            max="100"
+            step="1"
+            placeholder="0-100"
+          />
+        </div>
+
+        <div class="button-row">
+          <button id="addBtn" type="button">Add</button>
+          <button id="showPassingBtn" type="button">Show Passing Only</button>
+          <button id="showAllBtn" type="button">Show All</button>
+          <button id="clearBtn" type="button">Clear All</button>
+        </div>
+
+        <p id="message" class="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>Student Records</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="studentTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+      
+      <section class="card">
+        <h2>Summary</h2>
+        <div class="summary-grid">
+          <div class="summary-item">
+            <span class="label">Total</span>
+            <span id="totalCount">0</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Average</span>
+            <span id="avgScore">0.00</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Highest</span>
+            <span id="highestScore">0</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Lowest</span>
+            <span id="lowestScore">0</span>
+          </div>
+          <div class="summary-item">
+            <span class="label">Passing</span>
+            <span id="passingCount">0</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="https://s.brightspace.com/lib/bsi/2026.2.265/unbundled/mathjax.js"></script>
+    <script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+      if (document.querySelector('math, .d2l-element, .d2l-cplus-layout') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+        document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+          elm.setAttribute('style', 'display: block; height: 0.5rem;');
+        });
+
+        document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+          const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+          elm.replaceWith(mrow);
+        });
+
+        window.D2L.MathJax.loadMathJax({
+          outputScale: 1.5,
+          renderLatex: false,
+          enableMML3Support: false
+        });
+      }
+    });
+    </script>
+    <script type="module" src="https://s.brightspace.com/lib/bsi/2026.2.265/unbundled/prism.js"></script>
+    <script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.d2l-code').forEach(code => {
+        window.D2L.Prism.formatCodeElement(code);
+      });
+    });
+    </script>
+    <script type="module" src="https://s.brightspace.com/lib/bsi/2026.2.265/unbundled/embeds.js"></script>
+    <script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+      window.D2L.EmbedRenderer.renderEmbeds(document.body);
+    });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

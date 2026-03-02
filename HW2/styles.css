@@ -1,0 +1,128 @@
+/* Starter styles (students may improve the UI) */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 24px auto 40px;
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #666;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.form-row {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+button {
+  border: 1px solid #999;
+  background: #f7f7f7;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ececec;
+}
+
+button.danger {
+  border-color: #c44;
+  color: #a00;
+}
+
+.message {
+  min-height: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #b00020;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th, td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 8px;
+  text-align: left;
+}
+
+th {
+  background: #fafafa;
+}
+
+.status-pass {
+  color: #0a7a2f;
+  font-weight: 600;
+}
+
+.status-fail {
+  color: #b00020;
+  font-weight: 600;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.summary-item {
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+  display: grid;
+  gap: 4px;
+}
+
+.summary-item .label {
+  color: #666;
+  font-size: 13px;
+}
